@@ -1,0 +1,88 @@
+<html>
+<!-- <style>
+    /* html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+} */
+    p,
+    ul {
+        border: 2px solid rebeccapurple;
+        padding: .5em;
+    }
+
+    .block,
+    li {
+        border: 2px solid blue;
+        padding: .5em;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .inline {
+        display: inline;
+    }
+    .box {
+        width: 350px;
+  /* inline-size: 350px; */
+  height: 150px;
+  /* block-size: 150px; */
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid black;
+}
+</style> -->
+<style>
+    .box{
+        width: 350;
+        height: 250px;
+        border: 2px solid;
+        margin: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 3px #aba9a9;
+    }
+    ul li{
+        list-style: none;
+        display: inline;
+        border: 1px solid blue;
+        margin: 5px;
+        padding: 5px;
+    }
+    .block{
+        display: block;
+        border: 1px solid blue;
+    }
+    .inline{
+        display: inline;
+        border: 1px solid red;
+    }
+    .inline1{
+        display: none;
+    }
+</style>
+<body>
+<div class="box">
+    box division (350+(2*padding size)+(2*border size))
+</div>
+<p>I am a paragraph. A short one.</p>
+<ul>
+    <li>Home</li>
+    <li>Services</li>
+    <li>Contact Us</li>
+</ul>
+
+<p>I am another paragraph. Some of the <span class="block">words</span> have been wrapped in a <span>span
+        element</span>.</p>
+<p class="inline">I am a paragraph. A short one.</p>
+<p class="inline1">I am another paragraph. Also a short one.</p>
+</body>
+</html>
